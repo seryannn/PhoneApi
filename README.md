@@ -239,6 +239,3 @@ python phoneapi.py api
 
 Your API will run at:
 **`http://127.0.0.1:5000/PhoneApi/v1/search=<number>`**
-
-```
-```
