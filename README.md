@@ -17,7 +17,7 @@
 * Number type (mobile, landline, VoIP, etc.)
 * Different formatting styles (E.164, international, national)
 * Short/emergency number detection
-* A built-in **REST API** for integration with other apps
+* A built-in **REST API** for integration with other apps (only in local)
 
 ---
 
