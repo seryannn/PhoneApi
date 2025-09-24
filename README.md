@@ -47,7 +47,7 @@ If you don’t have Python, download it from [python.org](https://www.python.org
 ### 2️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/PhoneApi.git
+git clone https://github.com/seryannn/PhoneApi.git
 cd PhoneApi
 ```
 
