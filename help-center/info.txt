@@ -1,0 +1,54 @@
+=======================================
+             PhoneApi
+=======================================
+
+Project: PhoneApi — Phone Number Intelligence Tool
+Version: 1.0
+Author: Seryan
+Website / GitHub: https://github.com/seryannn/PhoneApi
+License: MIT License
+
+---------------------------------------
+DESCRIPTION
+---------------------------------------
+PhoneApi is a Python tool to analyze and look up phone numbers.
+It works fully offline (no external API required) and provides:
+- Validation & possibility check
+- Geographic and country info
+- Carrier information
+- Timezones
+- Line type (Mobile, Landline, VoIP, etc.)
+- Number formats (E.164, international, national, RFC3966)
+- Number structure and portability
+- Special checks (emergency, short numbers)
+- Example number for the country
+
+---------------------------------------
+REQUIREMENTS
+---------------------------------------
+- Python 3.8+
+- phonenumbers
+- pycountry (optional, improves country info)
+- colorama
+- flask (for API mode)
+
+Install dependencies:
+pip install -r requirements.txt
+
+---------------------------------------
+USAGE
+---------------------------------------
+CLI Mode:
+python phoneapi.py <phone_number>
+
+API Mode:
+python phoneapi.py api
+Access API at:
+http://127.0.0.1:5000/PhoneApi/v1/search=<number>
+
+---------------------------------------
+CONTACT / SUPPORT
+---------------------------------------
+For issues, bug reports, or contributions, visit:
+https://github.com/seryannn/PhoneApi/issues
+
