@@ -1,0 +1,85 @@
+=======================================
+         PhoneApi — Help Guide
+=======================================
+
+PhoneApi is a Python tool for analyzing phone numbers.
+It works fully offline and provides detailed information
+about numbers, including carrier, region, format, and more.
+
+---------------------------------------
+USAGE: CLI MODE
+---------------------------------------
+python phoneapi.py <phone_number>
+
+Example:
+python phoneapi.py +14155552671
+
+This will output:
+- Validity & possibility
+- Geographic info (region, country)
+- Carrier info
+- Timezone(s)
+- Line type (Mobile, Landline, VoIP, etc.)
+- Number formats (E.164, international, national, RFC3966)
+- Number structure & portability
+- Special checks (emergency, short numbers)
+- Example number for the country
+
+---------------------------------------
+USAGE: API MODE
+---------------------------------------
+python phoneapi.py api
+
+- Starts a local Flask server at:
+  http://127.0.0.1:5000/PhoneApi/v1/search=<number>
+- Replace <number> with the phone number you want to query.
+- Example:
+  curl http://127.0.0.1:5000/PhoneApi/v1/search=+14155552671
+
+---------------------------------------
+DEPENDENCIES
+---------------------------------------
+- Python 3.8 or higher
+- phonenumbers
+- pycountry (optional, improves country info)
+- colorama (for CLI colors)
+- flask (for API mode)
+
+Install all dependencies via:
+pip install -r requirements.txt
+
+---------------------------------------
+TROUBLESHOOTING
+---------------------------------------
+Problem: Module not found (phonenumbers, pycountry, colorama, flask)
+Solution: Install missing module with pip
+
+Problem: API server won’t start
+Solution: Make sure port 5000 is free or edit phoneapi.py to change the port
+
+Problem: Invalid phone number format
+Solution: Include country code (e.g., +1, +33). Defaults to FR if missing.
+
+---------------------------------------
+QUICK START
+---------------------------------------
+1. Clone repository:
+   git clone https://github.com/seryannn/PhoneApi.git
+2. Navigate to folder:
+   cd PhoneApi
+3. Create virtual environment (optional):
+   python -m venv .venv
+   .venv\Scripts\activate  (Windows)
+   source .venv/bin/activate  (Linux/Mac)
+4. Install dependencies:
+   pip install -r requirements.txt
+5. Run CLI lookup:
+   python phoneapi.py +14155552671
+6. Or start API server:
+   python phoneapi.py api
+
+---------------------------------------
+LICENSE
+---------------------------------------
+MIT License — free to use, modify, and distribute.
+
