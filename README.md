@@ -223,7 +223,7 @@ This project is licensed under the **MIT License** — free to use, modify, and 
 ## 💡 Quick Start
 
 ```bash
-git clone https://github.com/yourusername/PhoneApi.git
+git clone https://github.com/seryannn/PhoneApi.git
 cd PhoneApi
 python3 -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
